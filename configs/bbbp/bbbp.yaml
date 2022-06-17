@@ -1,0 +1,35 @@
+OUTPUT_DIR: './test/bbbp'
+TAG: 'default'
+SEED: 2021
+NUM_FOLDS: 10
+HYPER: True
+HYPER_REMOVE: None
+NUM_ITERS: 30
+
+
+DATA:
+  BATCH_SIZE: 64
+  DATASET: 'bbbp'
+  DATA_PATH: './data/bbbp/'
+  TASK_TYPE: 'classification'
+  METRIC: 'auc'
+  SPLIT_TYPE: 'random'
+  
+
+MODEL:
+  F_ATT: False
+  BRICS: False
+  
+
+LOSS:
+  FL_LOSS: False
+  CL_LOSS: False
+
+
+TRAIN:
+  EARLY_STOP: 50
+  MAX_EPOCHS: 200
+  OPTIMIZER:
+    TYPE: 'adam'
+  LR_SCHEDULER:
+    TYPE: 'reduce'
