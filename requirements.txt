@@ -1,0 +1,12 @@
+hyperopt==0.2.5
+numpy==1.19.2
+pandas==1.2.4
+PyYAML==6.0
+rdkit==2021.03.1
+scikit_learn==1.1.1
+termcolor==1.1.0
+torch==1.7.1+cu101
+torch_geometric==1.7.1
+torch_scatter==2.0.7
+tqdm==4.62.2
+yacs==0.1.8
