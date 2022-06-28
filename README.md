@@ -12,7 +12,7 @@ torch==1.7.1+cu101
 torch_geometric==1.7.1
 torch_scatter==2.0.7
 ```
-To install [requirements](https://github.com/idrugLab/hignn/requirements.txt):
+To install [requirements](https://github.com/idrugLab/hignn/blob/main/requirements.txt):
 ```txt
 pip install -r requirements.txt
 ```
