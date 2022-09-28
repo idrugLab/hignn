@@ -42,16 +42,16 @@ git clone https://github.com/idruglab/hignn
 cd ./hignn
 
 # For one random seed
-python ./source/train.py --cfg ./configs/bbbp/bbbp.yaml 'SEED' 2022 'MODEL.BRICS' True 'MODEL.F_ATT' True --tag seed_2022
+python ./source/train.py --cfg ./configs/bbbp/bbbp.yaml --opts 'SEED' 2022 'MODEL.BRICS' True 'MODEL.F_ATT' True --tag seed_2022
 
 # For 10 different random seeds (2021~2030)
-python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml 'MODEL.BRICS' True 'MODEL.F_ATT' True 'HYPER' False --tag 10_seeds
+python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml --opts 'MODEL.BRICS' True 'MODEL.F_ATT' True 'HYPER' False --tag 10_seeds
 
 # For hyperparameters optimization
-python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml 'MODEL.BRICS' True 'MODEL.F_ATT' True --tag hignn # HiGNN
-python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml 'MODEL.F_ATT' True --tag w/o_hi # the variant (w/o HI)
-python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml 'MODEL.BRICS' True --tag w/o_fa # the variant (w/o FA)
-python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml --tag hignn # the variant (w/o All)
+python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml --opts 'MODEL.BRICS' True 'MODEL.F_ATT' True --tag hignn # HiGNN
+python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml --opts 'MODEL.F_ATT' True --tag w/o_hi # the variant (w/o HI)
+python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml --opts 'MODEL.BRICS' True --tag w/o_fa # the variant (w/o FA)
+python ./source/cross_validate.py --cfg ./configs/bbbp/bbbp.yaml --tag vanilla # the variant (w/o All)
 ```
 And more hyperparameter details can be found in [config.py](https://github.com/idrugLab/hignn/blob/main/source/config.py "config.py").
 
