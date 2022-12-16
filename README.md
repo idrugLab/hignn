@@ -1,5 +1,5 @@
 ## Introduction
-HiGNN is a well-designed hierarchical and interactive informative graph neural networks framework for predicting molecular property by utilizing a co-representation learning of molecular graphs and chemically synthesizable BRICS fragments. Meanwhile, a plug-and-play feature-wise attention block was first designed in HiGNN architecture to adaptively recalibrate atomic features after message passing phase.(https://arxiv.org/abs/2208.13994)
+HiGNN is a well-designed hierarchical and interactive informative graph neural networks framework for predicting molecular property by utilizing a co-representation learning of molecular graphs and chemically synthesizable BRICS fragments. Meanwhile, a plug-and-play feature-wise attention block was first designed in HiGNN architecture to adaptively recalibrate atomic features after message passing phase. [HiGNN](https://pubs.acs.org/doi/10.1021/acs.jcim.2c01099) has been accepted for publication in [Journal of Chemical Information and Modeling](https://pubs.acs.org/journal/jcisd8/)
 ![overview](https://github.com/idrugLab/hignn/blob/main/hignn.png)
 Fig.1 The overview of HiGNN
 
@@ -83,6 +83,6 @@ Table 1 Predictive performance results of HiGNN on the drug discovery-related be
 | ESOL     | random | RMSE    | 0.587  | 0.708 | 0.658 | 0.587  | 0.563  | 0.582  | **0.532**   |
 | Lipo     | random | RMSE    | 0.563  | 0.664 | 0.683 | 0.553  | 0.603  | 0.574  | **0.549**   |
 
-<!-- ## Acknowledgments
-The code was partly built based on [chemprop](https://github.com/chemprop/chemprop), [TrimNet](https://github.com/yvquanli/trimnet) and [Swin Transformer](https://github.com/microsoft/Swin-Transformer). Thanks a lot for their open source codes! -->
+## Acknowledgments
+The code was partly built based on [chemprop](https://github.com/chemprop/chemprop), [TrimNet](https://github.com/yvquanli/trimnet) and [Swin Transformer](https://github.com/microsoft/Swin-Transformer). Thanks a lot for their open source codes!
 
